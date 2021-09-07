@@ -8,6 +8,7 @@ pandas = "*"
 xlrd = "*"
 openpyxl = "*"
 seaborn = "*"
+tqdm = "*"
 
 [dev-packages]
 
