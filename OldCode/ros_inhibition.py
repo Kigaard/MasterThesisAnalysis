@@ -28,7 +28,7 @@ def perform_analysis(peptide_list_directory: str, modifications: list[tuple[str,
 
 
 def main():
-   raw_peptide_list_dir = \
+    raw_peptide_list_dir = \
         r"C:\Users\spec-makie17\Documents\Experiments\211210_MDH_Oxidation_PH2118_ONGO\PeptideLists"
     peptide_list_dir = \
         r"C:\Users\spec-makie17\Documents\Experiments\211210_MDH_Oxidation_PH2118_ONGO\PeptideLists_Graphs\CRT-MDH_MDH"
@@ -36,8 +36,8 @@ def main():
     combine_spectra_in_peptide_lists()
 
     mods: List[tuple[str, str, float]] = [('Oxidation', 'MP', 15.995)]
-    perform_analysis(peptide_list_directory=parsed_peptide_list_directory, modifications=mods,
-                     condition_title="MDH in combined CRT + MDH")
+    #perform_analysis(peptide_list_directory=parsed_peptide_list_directory, modifications=mods,
+    #                 condition_title="MDH in combined CRT + MDH")
 
     # # read_and_save_peptide_lists(list_directory=peptide_list_directory, save_directory=parsed_peptide_list_directory)
     # oxidation_dict: dict = calculate_oxidation_percentages(peptide_list_directory=parsed_peptide_list_directory,
