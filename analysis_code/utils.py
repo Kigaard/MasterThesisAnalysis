@@ -32,5 +32,5 @@ def get_residue_name(three_letter: str) -> str:
     :param three_letter: The tree letter code.
     :return: The residue name.
     """
-    residues: Dict[str, str] = {"M": "Methionine", "P": "Proline", "C": "Cysteine"}
+    residues: Dict[str, str] = {"M": "Methionine", "P": "Proline", "C": "Cysteine", "H": "Histidine"}
     return residues[three_letter.upper()]
